@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dinshunoslik fanidan mavzular va 7 slaydli taqdimotlar">
+  <title>Dinshunoslik — Taqdimotlar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#" id="homeBrand"><span class="brand-mark">D</span><span><b>DINSHUNOSLIK</b><small>TAQDIMOTLAR MARKAZI</small></span></a>
+    <div class="top-actions"><span class="pill"><i></i> 29 MAVZU · 203 SLAYD</span><button class="icon-btn" id="themeToggle" title="Ko‘rinishni almashtirish" aria-label="Ko‘rinishni almashtirish">◐</button></div>
+  </header>
+  <main>
+    <section id="homeView">
+      <div class="hero">
+        <div class="hero-copy">
+          <div class="eyebrow"><span>●</span> BILIM · TARIX · MADANIYAT</div>
+          <h1>Har bir mavzu.<br><em>Yangi nigoh.</em></h1>
+          <p>Dinshunoslik fanidan mavzuni tanlang va 7 slaydli taqdimotni ko‘ring. Har bir mavzu o‘z ranglari va uslubiga ega.</p>
+          <div class="hero-stats"><div><strong>29</strong><span>mavzu</span></div><div><strong>7</strong><span>slayd / mavzu</span></div><div><strong>203</strong><span>jami slayd</span></div></div>
+        </div>
+        <div class="hero-art" aria-hidden="true"><div class="orb orb-a"></div><div class="orb orb-b"></div><div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="art-core">D<span>✦</span></div><div class="art-label label-top">DINSHUNOSLIK</div><div class="art-label label-bottom">ILM · TAFAKKUR · BAG‘RIKENGLIK</div></div>
+      </div>
+      <div class="section-head"><div><div class="eyebrow">O‘QUV MATERIALLARI</div><h2>Mavzuni tanlang</h2></div><div class="search-wrap"><span>⌕</span><input id="searchInput" type="search" placeholder="Mavzu yoki kodni qidiring..." aria-label="Mavzu qidirish"></div></div>
+      <div class="filter-row"><button class="filter active" data-filter="all">Barchasi <b>29</b></button><button class="filter" data-filter="history">Tarix va dinlar</button><button class="filter" data-filter="society">Jamiyat va huquq</button><button class="filter" data-filter="digital">Raqamli xavfsizlik</button></div>
+      <div id="topicGrid" class="topic-grid"></div>
+      <p id="emptyState" class="empty-state" hidden>Bu qidiruv bo‘yicha mavzu topilmadi.</p>
+    </section>
+    <section id="presentationView" hidden>
+      <div class="presentation-top">
+        <button class="back-btn" id="backBtn">← <span>Barcha mavzular</span></button>
+        <div class="pres-meta"><span id="presCode" class="pres-code">KT2</span><span id="presTitle">Mavzu</span></div>
+        <button class="print-btn" id="printBtn">⇩ <span>PDF / Chop etish</span></button>
+      </div>
+      <div class="deck-shell" id="deckShell">
+        <div class="deck-glow"></div>
+        <article class="slide" id="slide">
+          <div class="slide-topline"><span id="slideTopicCode">KT2 · DINSHUNOSLIK</span><span id="slideCounter">01 / 07</span></div>
+          <div class="slide-content" id="slideContent"></div>
+          <div class="slide-footer"><span>DINSHUNOSLIK · O‘QUV TAQDIMOTI</span><span id="slideFooterNum">01</span></div>
+        </article>
+      </div>
+      <div class="deck-controls"><button class="nav-btn" id="prevBtn" aria-label="Oldingi slayd">←</button><div class="progress-area"><div class="progress-label"><span id="progressText">1-slayd</span><span id="progressPercent">14%</span></div><div class="progress-track"><div id="progressBar"></div></div><div class="dots" id="slideDots"></div></div><button class="nav-btn next" id="nextBtn" aria-label="Keyingi slayd">→</button></div>
+      <div class="keyboard-hint">SLAYDLAR ORASIDA HARAKATLANISH UCHUN <kbd>←</kbd> <kbd>→</kbd> TUGMALARIDAN FOYDALANING</div>
+      <div class="print-deck" id="printDeck"></div>
+    </section>
+  </main>
+  <footer><span>DINSHUNOSLIK TAQDIMOTLARI</span><span>Bilim — bag‘rikenglikning asosi.</span></footer>
+  <script src="topics.js"></script><script src="app.js"></script>
+</body>
+</html>
